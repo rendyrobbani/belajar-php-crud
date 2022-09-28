@@ -17,7 +17,7 @@ class DatabaseConfig
         if (self::$config == null) {
             self::$config = [];
             $filename = __DIR__ . '/../../resources/config/database.env';
-            $contents = explode(PHP_EOL, file_get_contents($filename));
+            $contents = explode("\n", file_get_contents($filename));
             foreach ($contents as $content) {
                 if (str_contains($content, '=') && !str_contains($content, '#')) {
                     $key = trim(substr($content, 0, strpos($content, '=')));
