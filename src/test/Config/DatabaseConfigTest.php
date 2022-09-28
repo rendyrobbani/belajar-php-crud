@@ -14,7 +14,7 @@ class DatabaseConfigTest extends TestCase
         self::assertEquals('localhost', $config['DB_HOST']);
         self::assertEquals('3306', $config['DB_PORT']);
         self::assertEquals('belajar_crud', $config['DB_NAME']);
-        self::assertEquals('admin', $config['DB_USER']);
+        self::assertEquals('root', $config['DB_USER']);
         self::assertEquals('', $config['DB_PASS']);
     }
 }
